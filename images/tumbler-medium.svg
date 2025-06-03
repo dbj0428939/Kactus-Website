@@ -1,0 +1,20 @@
+<svg width="90" height="140" viewBox="0 0 90 140" xmlns="http://www.w3.org/2000/svg">
+  <title>Medium Tumbler</title>
+  <defs>
+    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Tumbler Body -->
+  <path d="M20 20 L24 120 C24 130, 66 130, 66 120 L70 20 Z" fill="#f0f0f0" stroke="#cccccc" stroke-width="1"/>
+  <!-- Tumbler Lid -->
+  <path d="M15 20 L75 20 C75 10, 15 10, 15 20 Z" fill="#e0e0e0" stroke="#cccccc" stroke-width="1"/>
+  <!-- Straw -->
+  <circle cx="45" cy="15" r="4.5" fill="#d0d0d0" stroke="#cccccc" stroke-width="1"/>
+  <!-- Shine effect -->
+  <path d="M28 30 Q45 80, 62 30" fill="none" stroke="url(#shine)" stroke-width="9" opacity="0.3"/>
+  <!-- Size Label -->
+  <text x="45" y="70" font-family="Arial" font-size="11" text-anchor="middle" fill="#888888">Medium</text>
+  <text x="45" y="85" font-family="Arial" font-size="9" text-anchor="middle" fill="#888888">20oz</text>
+</svg>
