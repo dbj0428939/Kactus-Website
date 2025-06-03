@@ -45,6 +45,7 @@ header {
     top: 0;
     z-index: 1000;
     transition: var(--transition-smooth);
+    height: 60px; /* Reduced height */
 }
 
 header.scrolled {
@@ -56,25 +57,24 @@ header.scrolled {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
-    transition: var(--transition-smooth);
+    height: 100%;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
     text-decoration: none;
 }
 
 .logo img {
-    height: 50px;
+    height: 35px; /* Reduced logo size */
     transition: var(--transition-smooth);
 }
 
 .logo h1 {
     font-family: var(--accent-font);
-    font-size: 1.8rem;
+    font-size: 1.4rem; /* Reduced font size */
     color: var(--texas-blue);
     margin: 0;
     transition: var(--transition-smooth);
@@ -82,19 +82,22 @@ header.scrolled {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
     list-style: none;
+    height: 100%;
 }
 
 .nav-links a {
     color: #333;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
-    padding: 0.5rem 0;
+    font-size: 0.9rem; /* Reduced font size */
+    padding: 0.3rem 0;
     position: relative;
     transition: var(--transition-smooth);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .nav-links a::after {
@@ -119,26 +122,25 @@ header.scrolled {
 /* Cart Icon Styles */
 #cart-icon {
     position: relative;
-    padding: 0.5rem;
-    font-size: 1.2rem;
+    padding: 0.3rem;
+    font-size: 1rem;
 }
 
 .cart-count {
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: -5px;
+    right: -5px;
     background: var(--texas-red);
     color: white;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    font-size: 0.75rem;
+    width: 16px;
+    height: 16px;
+    font-size: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: var(--transition-smooth);
     transform-origin: center;
-    animation: cartBounce 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 @keyframes cartBounce {
@@ -146,9 +148,9 @@ header.scrolled {
     50% { transform: scale(1.2); }
 }
 
-/* Hero Section */
+/* Hero Section - Adjusted for new header height */
 .hero {
-    margin-top: 80px;
+    margin-top: 60px; /* Match header height */
     position: relative;
     background-color: var(--texas-blue);
     color: white;
